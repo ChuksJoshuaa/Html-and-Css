@@ -1,0 +1,146 @@
+body {
+   background: url("b693dc4fa086c65f0de93455b34b6832.jpg");
+}
+
+#top {
+    height: 900px;
+    margin: 10px;
+    background: url("325c50c100505ca707c4c06ab73fdd78.jpg");
+
+    display: grid;
+    grid-template-rows: 8% 92%;
+    grid-gap: 0px;
+}
+
+.second-top {
+     background: url("325c50c100505ca707c4c06ab73fdd78.jpg");
+     background-size: cover;
+
+     display: flex;
+     flex-direction: row;
+     flex: 1 1 100px;
+     justify-content: flex-end;
+     align-items: center;
+
+}
+
+.second-top0 {
+     margin-right: 650px;
+     font-size: 1.5em;
+     font-family: sans-serif
+     line-height: 50px;
+     color: red;
+     transition: all 500ms ease;
+}
+
+.second-top0:hover {
+     color: rgb(207, 170, 78);
+     font-family: "lato", sans-serif;
+     font-size: 1.2em;
+     padding: 10px 10px;
+     box-shadow: 1px 1px 1px 1px silver;
+}
+
+
+.second-top1 {
+      margin: 10px;
+      text-align: center;
+      font-size: 1em;
+      font-family: 'lato', sans-serif;
+      line-height: 10px;
+      color: red;
+      transition: all 500ms ease;
+
+}
+
+.second-top1:hover {
+      margin: 10px;
+      color: black;
+      text-align: start;
+      padding: 30px 30px;
+      font-size: 0.8em;
+      font-family: 'lato', sans-serif;
+      color: red;
+
+}
+
+
+
+.third-top {
+      background: url("b693dc4fa086c65f0de93455b34b6832.jpg");
+      color: url("a38618f06fc49dc6a6395bc865153e6b.jpg");
+      background-size: cover;
+
+      margin: 10px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.third-top1 {
+       color: red;
+       line-height: 30px;
+       font-size: 3em;
+       font-family: "lato", sans-serif;
+       margin: 10px;
+       transition: all 500ms ease;
+}
+.third-top1:hover {
+
+       color: rgb(148, 22, 102);
+       padding: 20px 20px;
+       box-shadow: 2px 2px 2px 2px grey;
+       font-size: 3.3em;
+}
+
+.third-top2 {
+       color: white;
+       line-height: 20px;
+       font-size: 1.5em;
+       font-family: sans-serif
+       margin: 10px;
+
+}
+
+.third-top3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
+}
+
+.third-top4 {
+     background: red;
+     color: white;
+     margin: 10px;
+     font-size: 1em;
+     transition: all 500ms ease;
+
+}
+
+
+.third-top5 {
+     line-height: 40px;
+     font-family: "lato", sans-serif,
+     font-size: 2em;
+     color: white;
+     margin: 10px;
+}
+.third-top6 {
+     padding: 10px;
+     color: white;
+     margin: 5px;
+     width: 3%;
+}
+
+.facebook-custom {
+     padding: 10px;
+     color: white;
+     margin: 5px;
+     width: 3%;
+
+}
