@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   background: transparent;
+   font-family: sans-serif;
+   font-size: 15px;
+   max-width: 980px;
+   width: 90%;
+   margin: 0 auto; /* it is used to set the layout to the center */
+
+}
+
+.header1 {
+   height: 5vh;
+   width: 100%;
+   background: rgba(48, 46, 44, 0.4);
+}
+
+h1 {
+    text-align: center;
+    line-height: 5px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: black;
+    white-space: normal;
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    transition: all 500ms ease;
+}
+
+h1:hover {
+    text-align: end;
+    color: white;
+    padding: 0 20px;
+    box-shadow: 2px 2px 2px 2px silver;
+}
+
+
+
+.header1 ul {
+     width: 40%;
+     display: inline-flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     margin-left: 60%;
+     list-style: none;
+}
+
+.header1 ul li {
+     text-align: center;
+     margin: 10px;
+     padding: 10px;
+     font-size: 0.9rem;
+     line-height: 5px;
+     white-space: normal;
+     font-family: sans-serif;
+
+}
+
+.header1 ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.active, .header1 ul li:hover {
+     background: rgb(68, 77, 70);
+     border-radius: 2px;
+}
+
+.sub_menu {
+  display: none;
+}
+
+.header1 ul li:hover .sub_menu {
+   display: block;
+   position: absolute;
+   background: rgba(48, 46, 44, 0.4);
+   margin-top: 10px;
+   margin-left: -15px;
+}
+.header1 ul li:hover .sub_menu ul {
+   display: block;
+   margin: 10px;
+}
+
+
+.header1 ul li:hover .sub_menu ul li {
+    width: 70px;
+    padding: 10px;
+    background: transparent;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.header1 ul li:hover .sub_menu ul li a:hover {
+    display: block;
+    color: goldenrod;
+}
+
+
+#main1 {
+     height: 500px;
+     width: 100%;
+     background: url("images-14-1.jpg");
+     background-position: center;
+     background-size: cover;
+     text-align: center;
+}
+
+
+.main12 {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-gap: 1px;
+    margin: 10px;
+}
+
+
+
+.main2 {
+   display: inline-block;
+   margin: 10px;
+   position: absolute;
+   top: 30%;
+   left: 33%;
+   right: 35%;
+   text-align: center;
+}
+
+.main2 h4 {
+    font-size: 1.5em;
+}
+
+.text {
+  visibility: hidden;
+}
+
+.main3 h2 {
+   font-weight: bold;
+   transition: all 500ms ease;
+}
+
+.main3:hover {
+    height: 170px;
+    background: rgba(48, 46, 44, 0.4);
+    width: 40%;
+    margin-left: 20%;
+}
+
+.main3:hover .text {
+   visibility: visible;
+   color: white;
+   font-size: 1em;
+}
+
+.grid1 {
+    width: 100%;
+    background: white;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 5px;
+
+}
+
+.grid2 {
+   background: white;
+   margin: 0px;
+
+}
+
+.grid2 h3 {
+    font-size: bold;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 0.9rem;
+
+}
+.grid2 img {
+   display: inline-block;
+   width: 100%;
+   border-radius: 20px 20px;
+   transition: all 500ms ease;
+}
+.grid2 img:hover {
+   display: inline-block;
+   width: 90%;
+   padding: 30px;
+   border-radius: 20px 20px;
+   box-shadow: 2px 2px 2px 2px silver;
+}
+
+
+
+
+.grid2 p {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+
+.button1 {
+     height: 30px;
+     width: 25%;
+     background: white;
+     position: absolute;
+     left: 20%;
+}
+
+@media only screen and (max-width:550px) {
+
+     .header1 h1 {
+         font-size: 1.4rem;
+     }
+
+      .grid1 {
+         height: 550px;
+         display: grid;
+         grid-template-columns: 50% 50%;
+      }
+
+      .grid2 {
+         margin: 0;
+      }
+
+      .grid2 img {
+          display: block;
+          margin-left: 0;
+          width: 100%;
+      }
+
+
+      .main3:hover {
+        height: 230px;
+        background: rgba(48, 46, 44, 0.4);
+        width: 30%;
+
+      }
+
+}
+
+@media only screen and (max-width:360px) {
+         .grid2 img {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+         }
+
+}
+
+@media only screen and (max-width:450px) {
+         .grid2 img {
+            display: inline-block;
+            width: 100%;
+            margin-right: 50px;
+         }
+
+}
+
+@media only screen and (max-width:660px) {
+     .grid1 {
+         height: 550px;
+         display: grid;
+         grid-template-columns: 50% 50%;
+         grid-gap: 5px;
+      }
+
+
+     .grid2 img {
+            display: inline-block;
+            width: 100%;
+            margin-left: 0;
+         }
+
+}
+
+@media only screen and (max-width:800px) {
+     .grid1 {
+         height: 550px;
+         display: grid;
+         grid-template-columns: 50% 50%;
+         grid-gap: 5px;
+      }
+
+
+     .grid2 img {
+            display: inline-block;
+            width: 100%;
+            margin-left: 0;
+         }
+
+}
+
+@media only screen and (max-width:900px) {
+
+     .grid2 img {
+            display: inline-block;
+            width: 100%;
+            margin-left: 0;
+         }
+
+}
+
+
